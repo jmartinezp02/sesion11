@@ -12,7 +12,7 @@
     <br>
     <p style="font-style: italic;">Condicional Simple</p>
     <script>
-        let num = -5;
+        let num = prompt("Digete un numero entero");
         if (num>0){
             console.log ("El numero es positivo")
             document.write ("El numero es positivo")
@@ -22,6 +22,21 @@
             console.log ("El numero es negativo")
             
         }
+
+
+      let Nota = prompt ("Digite una nota entre 0 - 5")
+      if ((Nota>=0) && (Nota<3)){
+        document.write ("Nota Reprobada");
+      }
+      else if ((Nota>=3) && (Nota<4)){
+        document.write ("Nota Aprobada pero debe Firmar Acta");
+      }
+      else if((Nota>=4) && (Nota<5)){
+        document.write ("Nota Aprobada Satisfactoriamente");
+      }else{
+        document.write ("Numero no valido como nota")
+      }
+
 
     </script>
 
